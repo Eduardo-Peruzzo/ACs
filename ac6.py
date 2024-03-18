@@ -23,7 +23,7 @@ quantidade_prod1 = int(input("Quantidade restante do produto 1: "))
 quantidade_prod2 = int(input("Quantidade restante do produto 2: "))
 preco_prod1 = float(input("Preço do produto 1: "))
 preco_prod2 = float(input("Preço do produto 2: "))
-valor = (quantidade_prod1 * preco_prod1) + (quantidade_prod2 * preco_prod2))
+valor = (quantidade_prod1 * preco_prod1) + (quantidade_prod2 * preco_prod2)
 
 print("VALOR A PAGAR: R$", valor)
 
