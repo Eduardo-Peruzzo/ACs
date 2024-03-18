@@ -23,13 +23,20 @@ quantidade_prod1 = int(input("Quantidade restante do produto 1: "))
 quantidade_prod2 = int(input("Quantidade restante do produto 2: "))
 preco_prod1 = float(input("Preço do produto 1: "))
 preco_prod2 = float(input("Preço do produto 2: "))
+valor = (quantidade_prod1 * preco_prod1) + (quantidade_prod2 * preco_prod2))
 
-print("VALOR A PAGAR: R$", (quantidade_prod1 * preco_prod1) + (quantidade_prod2 * preco_prod2))
+print("VALOR A PAGAR: R$", valor)
 
 """
 Problema 4
 """
 
+num1 = int(input("Informe um número: "))
+num2 = int(input("Informe outro número: "))
+num3 = int(input("Informe mais um número: "))
+num4 = (num1 + num2 + abs(num1 - num2))/2
+num_final = (num4 + num3 + abs(num4 - num3))/2
+print(num_final, "eh o maior")
 
 """
 Problema 5
