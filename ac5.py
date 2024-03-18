@@ -35,7 +35,9 @@ def main():
         if vida_monstro <= 0:
             print("O monstro morreu!")
             break
-        vida_aventureiro = (vida_aventureiro - (randint(1, atk_monstro) - def_aventureiro))
+        dano_monstro = (randint(1, atk_monstro) - def_aventureiro)
+        if dano_monstro >= 0:
+            vida_aventureiro = (vida_aventureiro - dano_monstro)
         if vida_aventureiro <= 0:
             print("Você morreu!")
             break
