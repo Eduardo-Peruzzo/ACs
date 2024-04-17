@@ -120,4 +120,33 @@ def menor_da_lista():
             print("Posicao: {}".format(x))
 
 
-menor_da_lista()
+# menor_da_lista()
+
+"""
+Problema 6
+"""
+
+def coluna():
+    coluna = int(input())
+    operacao = input().upper()
+    array = []
+    soma = 0
+    media = 0
+
+    for _ in range(0, 144):
+        array.append(int(input()))
+        print(array)
+
+    if operacao == "S":
+        for c in range(0, 12):
+            soma += array[coluna]
+            coluna += 12
+        print(soma)
+
+    if operacao == "M":
+        for c in range(0, 12):
+            media += array[coluna]
+            coluna += 12
+        print(media / 12)
+
+coluna()
