@@ -118,7 +118,7 @@ def menor_da_lista():
             print("Posicao: {}".format(x))
 
 
-menor_da_lista()
+# menor_da_lista()
 
 """
 Problema 6
@@ -147,3 +147,8 @@ def coluna():
         print("{:.1f}".format(media / 12))
 
 # coluna()
+
+"""
+Problema 7
+"""
+
