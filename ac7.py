@@ -155,7 +155,18 @@ Problema 7
 
 def embaralhar():
     quantidade = int(input())
+    frases = []
 
     for _ in range(0, quantidade):
         frase = input()
-        frase
+        frases.append(frase)
+
+    for c in range(quantidade):
+        frase = frases[c]
+        frase = frase.split(" ")
+        frase.sort(reverse=True, key=len)
+        print(" ".join(frase))
+
+
+
+embaralhar()
