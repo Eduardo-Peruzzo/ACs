@@ -105,22 +105,20 @@ Problema 5
 
 def menor_da_lista():
     quantidade = int(input())
-    lista = (input()).strip()
 
-    lista2 = lista.split(" ")
+    lista = [int(i) for i in input().split()]
 
-    menor = [int(s) for s in lista2]
-    lista2 = [int(s) for s in lista2]
+    menor = [int(s) for s in lista]
 
     menor.sort()
 
     print("Menor valor: {}".format(menor[0]))
-    for x, y in zip(list(range(0, quantidade)), lista2):
+    for x, y in zip(list(range(0, quantidade)), lista):
         if y == menor[0]:
             print("Posicao: {}".format(x))
 
 
-# menor_da_lista()
+menor_da_lista()
 
 """
 Problema 6
@@ -133,8 +131,8 @@ def coluna():
     soma = 0
     media = 0
 
-    for _ in range(0, 144):
-        array.append(int(input()))
+    for _ in range(144):
+        array.append(float(input()))
 
     if operacao == "S":
         for c in range(0, 12):
@@ -148,4 +146,4 @@ def coluna():
             coluna += 12
         print("{:.1f}".format(media / 12))
 
-coluna()
+# coluna()
