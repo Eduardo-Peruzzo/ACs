@@ -113,6 +113,7 @@ def menor_da_lista():
     menor.sort()
 
     print("Menor valor: {}".format(menor[0]))
+
     for x, y in zip(list(range(0, quantidade)), lista):
         if y == menor[0]:
             print("Posicao: {}".format(x))
@@ -152,3 +153,9 @@ def coluna():
 Problema 7
 """
 
+def embaralhar():
+    quantidade = int(input())
+
+    for _ in range(0, quantidade):
+        frase = input()
+        frase
