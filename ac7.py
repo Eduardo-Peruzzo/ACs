@@ -140,12 +140,12 @@ def coluna():
         for c in range(0, 12):
             soma += array[coluna]
             coluna += 12
-        print(soma)
+        print("{:.1f}".format(soma))
 
     if operacao == "M":
         for c in range(0, 12):
             media += array[coluna]
             coluna += 12
-        print(media / 12)
+        print("{:.1f}".format(media / 12))
 
 coluna()
