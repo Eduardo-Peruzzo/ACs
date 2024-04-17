@@ -135,7 +135,6 @@ def coluna():
 
     for _ in range(0, 144):
         array.append(int(input()))
-        print(array)
 
     if operacao == "S":
         for c in range(0, 12):
