@@ -127,7 +127,7 @@ Problema 6
 
 def coluna():
     coluna = int(input())
-    operacao = input().upper()
+    operacao = input().upper().strip()
     array = []
     soma = 0
     media = 0
@@ -136,13 +136,13 @@ def coluna():
         array.append(float(input()))
 
     if operacao == "S":
-        for c in range(0, 12):
+        for _ in range(0, 12):
             soma += array[coluna]
             coluna += 12
         print("{:.1f}".format(soma))
 
     if operacao == "M":
-        for c in range(0, 12):
+        for _ in range(0, 12):
             media += array[coluna]
             coluna += 12
         print("{:.1f}".format(media / 12))
