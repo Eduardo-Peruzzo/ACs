@@ -79,24 +79,63 @@ def soma_fatorial():
         except EOFError:
             return
 
-soma_fatorial()
+# soma_fatorial()
 
 """
 Problema 4
 """
 
+def comida():
+    n = int(input())
+    for _ in range(n):
+        dias = 0
+        quantidade = float(input())
+        while quantidade > 1:
+            quantidade /= 2
+            dias += 1
+        print(dias, "dias")
 
+# comida()
 
 """
 Problema 5
 """
 
+def frequencia():
+    n = int(input())
+    lista = []
+    for _ in range(n):
+        num = int(input())
+        lista.append(num)
+    lista_unica = list(set(lista))
+    lista_unica.sort()
+
+    for i in range(len(lista_unica)):
+        print("{} aparece {} vez(es)".format(lista_unica[i], lista.count(lista_unica[i])))
+
+
+# frequencia()
 
 
 """
 Problema 6
 """
 
+def primos():
+    n = int(input())
+
+    for _ in range(n):
+        num = int(input())
+        raiz = num ** 0.5
+        primo = "Prime"
+        for i in range(2, int(raiz+1)):
+            if num % i == 0:
+                primo = "Not Prime"
+                break
+        print(primo)
+
+
+# primos()
 
 
 """
