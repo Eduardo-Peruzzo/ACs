@@ -142,8 +142,34 @@ def primos():
 Problema 7
 """
 
+def moeda():
+    n = int(input())
+    while n != 0:
+        resultados = input().split()
+        print("Mary won {} times and John won {} times".format(resultados.count("0"), resultados.count("1")))
+        n = int(input())
+
+# moeda()
 
 
 """
 Problema 8
 """
+
+def funcoes():
+    n = int(input())
+    for _ in range(n):
+        x_y = [int(s) for s in input().split()]
+        x = x_y[0]
+        y = x_y[1]
+        rafael = (3*x)**2 + y**2
+        beto = 2*(x**2) + (5*y)**2
+        carlos = -100*x + y**3
+        if rafael > beto and rafael > carlos:
+            print("Rafael ganhou")
+        if beto > rafael and beto > carlos:
+            print("Beto ganhou")
+        if carlos > beto and carlos > rafael:
+            print("Carlos ganhou")
+
+funcoes()
