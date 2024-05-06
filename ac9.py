@@ -28,7 +28,6 @@ Problema 3
 def mercado():
     n = int(input())
     produtos = {}
-    compras = {}
 
     for _ in range(n):
         custo = 0
@@ -40,12 +39,9 @@ def mercado():
 
         lista_de_compra = int(input())
         for _ in range(lista_de_compra):
-            compra = input().split()
-            compras[compra[0]] = int(compra[1])
-
-        lista = list(compras)
-        for c in range(len(lista)):
-            custo += (produtos[lista[c]] * compras[lista[c]])
+            fruta, quantidade = input().split()
+            if fruta in produtos.keys():
+                custo += (produtos[fruta] * int(quantidade))
 
         print("R$ {:.2f}".format(custo))
 
