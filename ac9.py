@@ -76,15 +76,45 @@ def folhas():
 Problema 6
 """
 
+def tacografo():
+    n = int(input())
+    total = 0
+    for _ in range(n):
+        tempo, km = input().split()
+        total += float(tempo) * float(km)
+    print("{:.0f}".format(total))
 
+# tacografo()
 
 """
 Problema 7
 """
 
+def joao_burro():
+    n = int(input())
+    print(n*4)
+
+# joao_burro()
 
 
 """
 Problema 8
 """
 
+def sequencia():
+    n = int(input())
+    lista = []
+    total = 1
+    for _ in range(n):
+        num = int(input())
+        lista.append(num)
+    item_anterior = lista[0]
+    for item in lista:
+        if item_anterior == item:
+            continue
+        else:
+            total += 1
+        item_anterior = item
+    print(total)
+
+sequencia()
